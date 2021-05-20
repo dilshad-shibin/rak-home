@@ -1,20 +1,4 @@
-// Index of jQuery Active Code
 
-// :: 1.0 PRELOADER ACTIVE CODE
-// :: 2.0 NAVIGATION MENU ACTIVE CODE
-// :: 3.0 SCROLL TO TOP ACTIVE CODE
-// :: 4.0 SCROLL LINK ACTIVE CODE
-// :: 5.0 SMOOTH SCROLLING ACTIVE CODE
-// :: 6.0 PORTFOLIO ACTIVE CODE
-// :: 7.0 AOS ACTIVE CODE
-// :: 8.0 PREVENT DEFAULT ACTIVE CODE
-// :: 9.0 FEATURES SLIDER ACTIVE CODE
-// :: 10.0 BRANDING SLIDER ACTIVE CODE
-// :: 11.0 TESTIMONIALS ACTIVE CODE
-// :: 12.0 TEAM SLIDER ACTIVE CODE
-// :: 13.0 APP SCREENSHOTS ACTIVE CODE
-// :: 14.0 FANCYBOX IMAGE GALLERY
-// :: 15.0 CONTACT FORM ACTIVE CODE
 
 (function ($) {
     'use strict';
@@ -178,7 +162,7 @@
         nav: false,
         dots: true,
         smartSpeed: 500,
-        autoplay: true,
+        autoplay: false,
         loop: true,
         mouseDrag: true,
         touchDrag: true,
@@ -192,6 +176,9 @@
             },
             768: {
                 items: 1
+            },
+            1200: {
+                items: 3
             }
         }
     });
@@ -296,6 +283,89 @@
             color: 'f00'
         }
     });
+
+        /* testi-slider */
+        $('.testi-slider.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            smartSpeed: 2000,
+            autoplay: true,
+            responsiveClass: true,
+            autoplayTimeout: 4000,
+            navText: ["<i class='icofont-arrow-left'></i>", "<i class='icofont-arrow-right'></i>"],
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                576: {
+                    items: 2
+                },
+                768: {
+                    items: 2
+                },
+                992: {
+                    items: 3
+                }
+            }
+        });
+
+        // expolre carousel
+        $('.testi-slider2.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            smartSpeed: 2000,
+            autoplay: true,
+            responsiveClass: true,
+            autoplayTimeout: 4000,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                576: {
+                    items: 2
+                },
+                768: {
+                    items: 3
+                },
+                992: {
+                    items: 5
+                }
+            }
+        });
+
+        // insta carousel
+        $('.testi-slider3.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            dots: false,
+            smartSpeed: 2000,
+            autoplay: true,
+            responsiveClass: true,
+            autoplayTimeout: 4000,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                576: {
+                    items: 2
+                },
+                768: {
+                    items: 3
+                },
+                992: {
+                    items: 5
+                }
+            }
+        });
+
 
     // :: 15.0 CONTACT FORM ACTIVE CODE
     // Get the form.

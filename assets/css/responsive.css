@@ -1,28 +1,4 @@
-/* ************************************************************
-:: Template Name: Appia - App Landing Page
-:: Template URI: http://theme-land.com/appia/
-:: Template Author Name: theme_land
-:: Template Author URI: hridoy1272@gmail.com
-:: Version: 1.0.0
-:: Created: 09 December 2019
-************************************************************ 
-*
-*
-******* :: INDEX OF RESPONSIVE CSS :: *******
-:: 1.0 COMMON CSS
-:: 2.0 HEADER AREA CSS
-:: 3.0 WELCOME AREA CSS
-:: 4.0 BENIFITS AREA CSS
-:: 5.0 ABOUT APP AREA CSS
-:: 6.0 PRICE PLAN AREA CSS
-:: 7.0 TESTIMONIAL AREA CSS
-:: 8.0 START FREE AREA CSS
-:: 9.0 DOWNLOAD AREA CSS
-:: 10.0 BREADCRUMB AREA CSS
-:: 11.0 BLOG PAGE DETAILS AREA CSS
-:: 12.0 FOOTER AREA CSS
-:: 13.0 PREVIEW AREA CSS
-****************************** */
+
 
 /* ******************************
 :: 1.0 COMMON CSS
@@ -238,6 +214,15 @@
         transition: .3s;
     }
 
+    nav.nav_arrows{
+        left: 0;
+    }
+
+    .owl-nav{
+        left: -244px;
+        bottom: 12px;
+    }
+
     [data-theme=dark] .main:before {
         background: #01081f;
     }
@@ -398,7 +383,7 @@
     }
 
     .navbar-dark .navbar-toggler-icon {
-        background: #fff;
+        background: #7e8085;
     }
 
     .navbar-sticky-on .navbar-toggler-icon{
@@ -422,7 +407,7 @@
 
     .navbar-dark .navbar-toggler-icon:before,
     .navbar-dark .navbar-toggler-icon:after {
-        background: #fff;
+        background: #7e8085;
     }
 
     .navbar-sticky-on .navbar-toggler-icon:before,

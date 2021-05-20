@@ -1,53 +1,4 @@
-/* ************************************************************
-:: Template Name: Appia - App Landing Page
-:: Template URI: http://theme-land.com/appia/
-:: Template Author Name: theme_land
-:: Template Author URI: hridoy1272@gmail.com
-:: Version: 1.0.0
-:: Created: 09 December 2019
-************************************************************ 
-*
-*
-******* :: INDEX OF CSS :: *******
-:: 1.0 WEB FONTS
-:: 2.0 IMPORT ALL CSS
-:: 3.0 GLOBAL CSS
-:: 4.0 COMMON CSS
-:: 5.0 PRELOADER CSS
-:: 6.0 SCROLL TO TOP AREA CSS
-:: 7.0 HEADER AREA CSS
-:: 8.0 WELCOME AREA CSS
-    :: 8.1 WELCOME AREA HOMEPAGE-2 CSS
-    :: 8.2 WELCOME AREA HOMEPAGE-3 CSS
-    :: 8.3 WELCOME AREA HOMEPAGE-4 CSS
-    :: 8.4 WELCOME AREA HOMEPAGE-5 CSS
-    :: 8.5 WELCOME AREA HOMEPAGE-6 CSS
-:: 9.0 BENIFITS AREA CSS
-:: 10.0 ABOUT APP AREA CSS
-:: 11.0 FEATURES AREA CSS
-:: 12.0 COUNTER AREA CSS
-:: 13.0 SCREENSHOTS AREA CSS
-:: 14.0 SERVICE AREA CSS
-:: 15.0 DISCOVER AREA CSS
-:: 16.0 PRICE PLAN AREA CSS
-:: 17.0 TESTIMONIAL AREA CSS
-:: 18.0 TEAM AREA CSS
-:: 19.0 START FREE AREA CSS
-:: 20.0 FAQ AREA CSS
-:: 21.0 DOWNLOAD AREA CSS
-:: 22.0 CONTACT AREA CSS
-:: 23.0 FOOTER AREA CSS
-:: 24.0 BLOG AREA CSS
-:: 25.0 BREADCRUMB AREA CSS
-:: 26.0 BLOG PAGE AREA CSS
-:: 27.0 BLOG PAGE DETAILS AREA CSS
-:: 28.0 FAQ PAGE AREA CSS
-:: 29.0 DOWNLOAD PAGE AREA CSS
-:: 30.0 NEWSLETTER AREA CSS
-:: 31.0 COMING SOON AREA CSS
-:: 32.0 ERROR AREA CSS
-:: 33.0 PREVIEW AREA CSS
-****************************** */
+
 
 /* ******************************
 :: 1.0 WEB FONTS
@@ -986,7 +937,7 @@ a,
     height: 40px;
     width: 40px;
     border-radius: 3px;
-    background-color: #1c144e;
+    background-color: #9a8d6e;
     text-align: center;
     cursor: pointer;
     z-index: 500;
@@ -1384,6 +1335,10 @@ a,
 .benifits-item .feature-icon {
     -webkit-transition: all 0.7s ease 0s;
     transition: all 0.7s ease 0s;
+}
+
+.benifits-item .feature-icon img{
+    width: 100% !important;
 }
 
 .benifits-item:hover {
@@ -3174,9 +3129,11 @@ a,
 .cd-slider {
     position: relative;
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     overflow: hidden;
-    margin-bottom: 8rem;
+    /* margin-bottom: 8rem; */
+    margin-top: 2rem;
+    z-index: 1;
 }
 
 .cd-slider li {
@@ -3194,7 +3151,7 @@ a,
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 70%;
+	width: 75%;
 	height: 100%;
 	background-size: cover;
 	background-position: 50% 50%;
@@ -3205,7 +3162,7 @@ a,
 
 .content {
 	position: absolute;
-	top: 0;
+	top: 25%;
 	left: 0;
 	width: 100%;
 	height: 100%;
@@ -3220,6 +3177,18 @@ a,
 	opacity: 0;
 	transition: transform .5s, opacity .5s;
     will-change: transform, opacity;
+    font-size: 20px;
+    position: relative;
+}
+
+.content h2:before{
+    content: "";
+    position: absolute;
+    background-color: #000;
+    width: 40px;
+    height: 2px;
+    left: 0;
+    bottom: 0px;
 }
 
 /* current slide */
@@ -3243,11 +3212,11 @@ li.prev_slide .image {
 	clip: rect(0, 0, 50rem, 0);
 }
 
-nav {
+nav.nav_arrows {
 	position: absolute;
 	bottom: 0;
-	right: 0;
-	background: #fff;
+	left: 1%;
+	/* background: #fff; */
 	z-index: 2;
 }
 
@@ -3307,7 +3276,7 @@ nav {
 
 .counter {
 	display: inline-block;
-	font-size: 4rem;
+	font-size: 1rem;
 	font-family: serif;
 	font-style: italic;
 }
@@ -3330,6 +3299,25 @@ nav {
 .insta-section{
     background: #fff;
     position: relative;
+}
+
+.innner-content{
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+}
+
+.inner-content img{
+    cursor: pointer;
+}
+
+.btn-explore{
+    border-radius: 15px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    background: transparent;
 }
 
 
@@ -3433,4 +3421,60 @@ nav {
 
 .footer-links a{
     color: rgba(255, 255, 255, 0.5);
+}
+
+.novelties{
+    background-color: #9a8d6e;
+    padding-top: 230px;
+    position: relative;
+    margin-top: -150px;
+    /* z-index: -1; */
+}
+
+.head-title2,.novelties p{
+    color: rgb(255 255 255 / 52%);
+}
+
+.main-heading2{
+    color: #fff;
+}
+
+.owl-nav{
+    position: absolute;
+    left: -380px;
+    bottom: 20px;
+}
+
+.owl-nav button{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #ccc !important;
+    border-radius: 50px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.owl-nav button i{
+    font-size: 25px;
+    color: #000;
+}
+
+.single-testimonial{
+    margin-bottom: 30px;
+}
+
+.single-testimonial img{
+    width: 100% !important;
+}
+
+.single-testimonial .testi-description{
+    background-color: #fff;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.single-testimonial .testi-description img{
+
 }
