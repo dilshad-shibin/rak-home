@@ -42,6 +42,17 @@
     .res-margin {
         margin-bottom: 30px;
     }
+    .footer-logo, .footer-links{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .offset-1{
+        text-align: center;
+        margin-left: 0;
+    }
+    .wht-clr{
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -221,6 +232,20 @@
     .owl-nav{
         left: -244px;
         bottom: 12px;
+    }
+
+    .navbar-icon-badge {
+        position: absolute;
+        top: 6px;
+        width: 18px;
+        height: 18px;
+        text-align: center;
+        color: #fff;
+        border-radius: 50%;
+        background: #ff0000;
+        font-size: 0.6rem;
+        line-height: 18px;
+        left: 30px;
     }
 
     [data-theme=dark] .main:before {
@@ -757,5 +782,45 @@
         font-size: 14px;
         padding-left: .4em;
         padding-right: .4em;
+    }
+}
+
+@media(max-width: 550px){
+    .content h2{
+        color: #fff;
+    }
+    .content h2:before{
+        background-color: #ffffff;
+    }
+    .prev::before, .next::before{
+        border-right-color: #fff;
+    }
+    .prev::after, .next::after {
+        background: #fff;
+    }
+    .next::before{
+        border-left-color: #fff;
+    }
+    .novelties .heading{
+        margin-bottom: 25px;
+    }
+    .video-box{
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 400px){
+    .main-heading{
+        font-size: 2.2rem;
+    }
+    .head-title{
+        font-size: 1rem;
+    }
+    .view-btn{
+        font-size: .8rem;
+    }
+    .view-btn::before{
+        width: 3rem;
+        left: -3.5rem;
     }
 }

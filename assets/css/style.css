@@ -3470,11 +3470,7 @@ nav.nav_arrows {
 
 .single-testimonial .testi-description{
     background-color: #fff;
-    padding: 10px 5px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
-}
-
-.single-testimonial .testi-description img{
-
 }
